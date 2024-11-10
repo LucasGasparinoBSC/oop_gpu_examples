@@ -1,0 +1,2 @@
+add_subdirectory(single_c_struct)
+add_subdirectory(multiple_c_struct)

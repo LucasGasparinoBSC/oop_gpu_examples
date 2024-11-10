@@ -1,0 +1,6 @@
+# Ignore build folders
+build*
+
+# Ignore nsys and ncu profile files
+*.nsys-rep
+*.ncu-rep
