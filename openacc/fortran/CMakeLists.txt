@@ -1,0 +1,1 @@
+add_subdirectory(single_ddt_with_scalar)
