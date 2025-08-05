@@ -48,7 +48,6 @@ int main(int argc, const char** argv) {
     Basic* d_struc = (Basic*)malloc(num_objects * sizeof(Basic));
     #pragma acc enter data create(d_struc[0:num_objects])
 
-    //#pragma acc kernels present(d_struc[0:num_objects])
     #pragma acc parallel loop present(d_struc[0:num_objects])
     for (int i = 0; i < num_objects; i++)
     {
