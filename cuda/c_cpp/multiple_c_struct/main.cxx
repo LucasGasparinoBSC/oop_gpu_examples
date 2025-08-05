@@ -8,7 +8,7 @@
 // GPU headers
 #include <cuda.h>
 #include <cuda_runtime.h>
-#include <nvToolsExt.h>
+#include <nvtx3/nvToolsExt.h>
 
 // Define the number of structs to be created
 #define NUM_OBJ 10

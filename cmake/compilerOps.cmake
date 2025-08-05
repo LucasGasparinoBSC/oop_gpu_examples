@@ -68,9 +68,9 @@ elseif(CMAKE_C_COMPILER_ID STREQUAL "Intel" OR CMAKE_C_COMPILER_ID STREQUAL "Int
 elseif(CMAKE_C_COMPILER_ID STREQUAL "NVHPC" OR CMAKE_C_COMPILER_ID STREQUAL "PGI")
 	message("-- NVHPC compiler detected")
 	# Common NVHPC+MPI flags
-	set(CMAKE_C_FLAGS ${CMAKE_C_FLAGS} "-cpp -lstdc++ -D_USE_NVTX -lnvToolsExt -cuda -Minfo=all")
-	set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-cpp -lstdc++ -D_USE_NVTX -lnvToolsExt -cuda -Minfo=all")
-	set(CMAKE_Fortran_FLAGS ${CMAKE_Fortran_FLAGS} "-cpp -lstdc++ -D_USE_NVTX -lnvToolsExt -cuda -Minfo=all")
+	set(CMAKE_C_FLAGS ${CMAKE_C_FLAGS} "-cpp -lstdc++ -D_USE_NVTX -cuda -Minfo=all")
+	set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-cpp -lstdc++ -D_USE_NVTX -cuda -Minfo=all")
+	set(CMAKE_Fortran_FLAGS ${CMAKE_Fortran_FLAGS} "-cpp -lstdc++ -D_USE_NVTX -lnvtx3interop -cuda -Minfo=all")
 	if(USE_NCCL)
 		set(CMAKE_C_FLAGS ${CMAKE_C_FLAGS} "-DNCCL_COMMS -cudalib=nccl")
 		set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-DNCCL_COMMS -cudalib=nccl")

@@ -8,7 +8,7 @@
 // GPU headers
 #include <cuda.h>
 #include <cuda_runtime.h>
-#include <nvToolsExt.h>
+#include <nvtx3/nvToolsExt.h>
 
 /**
  * @brief Simple struct containing an int and a float attribute

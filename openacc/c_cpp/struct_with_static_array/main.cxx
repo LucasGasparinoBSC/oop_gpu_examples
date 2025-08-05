@@ -8,7 +8,7 @@
 // GPU headers
 #include <cuda.h>
 #include <openacc.h>
-#include <nvToolsExt.h>
+#include <nvtx3/nvToolsExt.h>
 
 // Define the static array size
 #define SIZE 3
