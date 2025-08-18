@@ -26,7 +26,7 @@ In the main program, 2 kernels use the object, altering the contents of the data
 The included CMake structure compiles the set of examples. The executable for this example is located in:
 
 ```bash
-build/openacc/c_cpp/aos_with_dynamic_arrays/aos_with_dynamic_arrays
+build/openacc/c_cpp/self_instantiation/self_instantiation
 ```
 
 Remember to use the NVHPC compilers!
@@ -34,5 +34,5 @@ Remember to use the NVHPC compilers!
 ## NSYS execution
 
 ```bash
-nsys profile --trace=nvtx,cuda,openacc -f true --cuda-memory-usage=true -o [reportName] ./build/openacc/c_cpp/aos_with_dynamic_arrays/aos_with_dynamic_arrays
+nsys profile --trace=nvtx,cuda,openacc -f true --cuda-memory-usage=true -o [reportName] ./build/openacc/c_cpp/self_instantiation/self_instantiation
 ```
